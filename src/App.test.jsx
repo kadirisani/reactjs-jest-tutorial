@@ -10,4 +10,8 @@ describe('when App is loaded', () => {
     it('shows text hello', () => {
         expect(wrapper.find('h1').text()).toEqual('Hello')
     })
+    it('shows the disclaimers', () => {
+        expect(wrapper.find('Disclaimers').exists()).toEqual(true)
+    })
+
 })
